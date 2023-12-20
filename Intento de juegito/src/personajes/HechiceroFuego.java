@@ -1,17 +1,15 @@
 package personajes;
-import habilidades.especial;
 
-
-public class Hechicero extends Personaje implements IPersonaje{
+public class HechiceroFuego  extends Hechicero{
 	
-	public Hechicero() {
-		this.nombre = "Edward Elrik";
-		this.clase = "Alquimista";
-		this.profesion = "Hagane no Renkin";
+	public HechiceroFuego() {
+		this.nombre = "Merlin";
+		this.clase = "Hechicero de Fuego";
+		this.profesion = "Fenix";
 		
-		this.nivel = 501;
+		this.nivel = 999;
 		
-		this.ataque = 569;
+		this.ataque = 20000;
 		this.defensa = 199;
 	
 		
@@ -22,7 +20,7 @@ public class Hechicero extends Personaje implements IPersonaje{
 		this.experiencia = 426720;
 	}
 
-	public Hechicero(int inteligencia, int sabiduria, int carisma) {
+	public HechiceroFuego(int inteligencia, int sabiduria, int carisma) {
 		this.inteligencia = inteligencia;
 		this.sabiduria = sabiduria;
 		this.carisma = carisma;
@@ -40,17 +38,17 @@ public class Hechicero extends Personaje implements IPersonaje{
 
 	@Override
 	public String Saludo() {
-		return "Saciar la curiosidad es lo que me mantiene vivo";
+		return "La orden de fenix te purificará con sus llamas";
 	}
 
 	@Override
 	public String MensajeBatalla() {
-		return "¡HORA DE HACER MAGIA!";
+		return "¡HORA DE PURIFICAR!";
 	}
 
 	@Override
 	public String Despedida() {
-		return "Volveré al polvo de estrellas...";
+		return "Me verás en el brillo de las llamas...";
 	}
 
 	@Override
@@ -192,6 +190,4 @@ public class Hechicero extends Personaje implements IPersonaje{
 	public int Aagilidad() {
 		return this.agilidad;
 	}
-
-
 }

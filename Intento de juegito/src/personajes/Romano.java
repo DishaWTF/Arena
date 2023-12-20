@@ -1,29 +1,28 @@
 package personajes;
 
-import habilidades.especial;
+public class Romano extends Personaje implements IPersonaje{
 
-public class Barbaro extends Personaje implements IPersonaje{
 	
-	public Barbaro() {
-		this.nombre = "Gutts";
-		this.clase = "Barbaro";
-		this.profesion = "Berserker";
+	public Romano() {
+		this.nombre = "Magnus Alexander";
+		this.clase = "Romano";
+		this.profesion = "Legionario Romano";
+		this.nivel = 99;
 		
-		this.nivel = 1056;
+		this.ataque = 1000;
+		this.defensa = 299;
+
 		
-		this.ataque = 999;
-		this.defensa = 100;
-		
-		this.fuerza = 999;
 		this.destreza = 999;
-		this.carisma = 999;
+		this.fuerza = 999;
+		this.carisma = -999;
 		
-		this.experiencia = 105423520;
+		this.experiencia = 426720;
 	}
-	
-	public Barbaro(int fuerza, int destreza, int carisma) {
-		this.fuerza = fuerza;
-		this.destreza = destreza;
+
+	public Romano(int destreza, int fuerza, int carisma) {
+		this.destreza= destreza;
+		this.fuerza= fuerza;
 		this.carisma = carisma;
 	}
 	
@@ -51,20 +50,19 @@ public class Barbaro extends Personaje implements IPersonaje{
 	public String Profesion() {
 		return this.profesion;
 	}
-	
 	@Override
 	public String Saludo() {
-		return "Nadie puede vencerme cuando hago mi habilidad especial";
+		return "Soy el más grande, el más importante, el máximo";
 	}
 
 	@Override
 	public String MensajeBatalla() {
-		return "¡A BATALLAR!";
+		return "¡Este lugar primero y después seguiremos con los demás!";
 	}
 
 	@Override
 	public String Despedida() {
-		return "No quiero irme aún...";
+		return "Volveré con mis tropas...";
 	}
 
 	@Override
@@ -74,7 +72,7 @@ public class Barbaro extends Personaje implements IPersonaje{
 
 	@Override
 	public int Escudo() {
-		return 5000;
+		return 500;
 	}
 
 	@Override
@@ -139,12 +137,12 @@ public class Barbaro extends Personaje implements IPersonaje{
 
 	@Override
 	public int PoderMagico() {
-		return 0;
+		return 600;
 	}
 
 	@Override
 	public String MensajeAlMorir() {
-		return null;
+		return "Divide y reinarás jajajajaja....";
 	}
 
 	@Override
